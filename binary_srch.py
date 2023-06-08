@@ -36,17 +36,18 @@ def main():
 
     students.sort(key=lambda s: s.student_code)
 
+    print('||||||||||||||||||||||||')
     print("Sorted Students:")
     for student in students:
         print(f"First Name: {student.first_name}, Last Name: {student.last_name}, Student Code: {student.student_code}")
-        print('-------------------------------------------')
+        print('----------------------------------')
 
     target_code = int(input("Enter the student code to search: "))
     found_student = binary_search(students, target_code)
 
     if found_student:
-        print(f"Student found - First Name: {found_student.first_name}, Last Name: {found_student.last_name}, Student Code: {found_student.student_code}")
-        print('-------------------------')
+        print(f"Student found ==> ( First Name: {found_student.first_name}, Last Name: {found_student.last_name}, Student Code: {found_student.student_code})")
+        print('-----------------------------')
     else:
         print("Student not found.")
 
