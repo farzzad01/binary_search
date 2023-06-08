@@ -30,6 +30,7 @@ def main():
         first_name = input("Enter the first name of the student: ")
         last_name = input("Enter the last name of the student: ")
         student_code = int(input("Enter the student code: "))
+        print('-------------------------------')
         student = Student(first_name, last_name, student_code)
         students.append(student)
 
